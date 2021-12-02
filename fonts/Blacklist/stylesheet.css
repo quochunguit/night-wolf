@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Blacklist';
+    src: url('Blacklist.eot');
+    src: url('Blacklist.eot?#iefix') format('embedded-opentype'),
+        url('Blacklist.woff2') format('woff2'),
+        url('Blacklist.woff') format('woff'),
+        url('Blacklist.ttf') format('truetype'),
+        url('Blacklist.svg#Blacklist') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

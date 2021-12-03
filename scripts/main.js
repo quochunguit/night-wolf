@@ -33,3 +33,10 @@ $('.page-footer .md-contact .md-content .md-row-2').css('height',height_1);
 new WOW().init();
 // $("#md-tk").fancybox().trigger('click');
 
+$(".md-button-lienhe").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".md-contact").offset().top},
+        'slow');
+    $(".page-header .top-header .main-menu-mb").removeClass('active');
+});
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title here</title>
+    <title>Nước uống thế hệ mới - Night Wolf</title>
     <link  href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link  href="vendor/wow/animation.css" rel="stylesheet" type="text/css">
      <link  href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
                         <li><a href="#">SẢN PHẨM</a></li>
                         <li><a href="#">CHƯƠNG TRÌNH</a></li>
                         <li><a href="#">LUYỆN TẬP</a></li>
-                        <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="#" class="md-button-lienhe">LIÊN HỆ</a></li>
                     </ul>
 
                 </div>
@@ -40,7 +40,7 @@
                     <li><a href="#">SẢN PHẨM</a></li>
                     <li><a href="#">CHƯƠNG TRÌNH</a></li>
                     <li><a href="#">LUYỆN TẬP</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li><a href="#" class="md-button-lienhe">LIÊN HỆ</a></li>
                 </ul>
                 <img src="./images/ico-close.png" alt="" class="md-close">
             </div>
@@ -223,27 +223,28 @@
             </div>
             <div class="md-content clearfix">
                 <div class="container">
-                    <form action="">
+                    <form id="nightwolf" action="">
                         <div class="md-row md-row-1 wow fadeInLeft">
                             <div class="md-col">
-                                <input type="text" placeholder="TÊN CỦA BẠN">
+                                <input type="text" name="name" placeholder="TÊN CỦA BẠN">
                                 <!-- <p class="error">Vui lòng nhập tên của bạn</p> -->
                             </div>
                             <div class="md-col">
-                                <input type="tel" placeholder="SỐ ĐIỆN THOẠI">
+                                <input type="tel" name="phone" placeholder="SỐ ĐIỆN THOẠI">
                                 <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
                             </div>
                             <div class="md-col">
-                                <input type="text" placeholder="ĐỊA CHỈ">
+                                <input type="text" name="address" placeholder="ĐỊA CHỈ">
                                 <!-- <p class="error">Vui lòng nhập địa chỉ</p> -->
                             </div>
                         </div>
                         <div class="md-row md-row-2 wow fadeInRight">
                             <div class="md-col">
-                                <textarea name="" id="" cols="30" rows="3" placeholder="ĐỂ LẠI LỜI NHẮN CHO CHÚNG TÔI ..."></textarea>
+                                <textarea name="message" id="" cols="30" rows="3" placeholder="ĐỂ LẠI LỜI NHẮN CHO CHÚNG TÔI ..."></textarea>
                             </div>
                         </div>
-                        <input type="button" value="ĐẶT HÀNG NGAY">
+                        <input type="hidden" id="current-date" name="Date" value="" />
+                        <input type="button" id="form-submit" onclick="App.Dev.register();" value="ĐẶT HÀNG NGAY">
                     </form>
                 </div>
             </div>
@@ -312,4 +313,6 @@
 <script src="vendor/wow/wow.min.js" type="text/javascript"></script>
 <script src="vendor/fancybox/jquery.fancybox.min.js" type="text/javascript" ></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/jquery.validate.js"></script>
+<script src="scripts/dcommon.js"></script>
 </html>

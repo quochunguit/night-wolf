@@ -525,23 +525,23 @@ input[type=submit] {
   width: 100%;
 }
 .page-main .md-poster .poster-text-1{
-  position: absolute;
-  right: 12%;
-    top: 62%;
-    width: 23%;
+      position: absolute;
+    right: 11%;
+    top: 45%;
+    width: 22%;
     z-index: 6;
 }
 .page-main .md-poster .poster-text-2{
   position: absolute;
-  right: 12%;
-  top: 32%;
-  width: 23%;
+    left: 11%;
+    top: 48%;
+    width: 22%;
 }
 .page-main .md-poster .poster-text-3{
-  position: absolute;
-      right: 24%;
-    top: 16%;
-    width: 45%;
+      position: absolute;
+        right: 37%;
+    top: 35%;
+    width: 25%;
 }
 .page-main .md-poster{
     position: relative;
@@ -553,6 +553,12 @@ input[type=submit] {
   width: 100%;
 }
 @media screen and (max-width: 767px){
+  .page-main .md-poster .poster-text-3{
+  position: absolute;
+      right: 24%;
+    top: 16%;
+    width: 45%;
+}
   .page-main .how-to-use .bg-how-to-use{
     top: -5%;
   }
@@ -571,11 +577,13 @@ input[type=submit] {
     right: 24%;
     top: 44%;
     width: 45%;
+    
   }
   .page-main .md-poster .poster-text-2{
         right: 25%;
     top: 71%;
     width: 45%;
+    left: auto;
   }
 }
 @media screen and (max-width: 350px){
